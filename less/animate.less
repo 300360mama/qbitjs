@@ -1,0 +1,189 @@
+@animateDuration:0.5s;
+
+  .buttonTogle_elem{
+    transform-origin: 50% 50%;
+  }
+  .slideInLeft {
+
+    animation: slideInLeft @animateDuration forwards;
+
+  }
+
+  .slideInRight {
+
+    animation: slideInRight @animateDuration forwards;
+
+  }
+
+
+
+  .closeTopElem{
+    animation: closeTopElem @animateDuration forwards;
+
+  }
+
+  .closeTopElemReverse{
+    animation: closeTopElemReverse @animateDuration forwards;
+
+  }
+
+
+
+  .closeBottomElem{
+    animation: closeBottomElem @animateDuration forwards;
+
+  }
+
+  .closeBottomElemReverse{
+    animation: closeBottomElemReverse @animateDuration forwards;
+    transform-origin: 50% 50%;
+
+  }
+
+
+
+  .hideMiddleElem{
+    animation: hideMiddleElem @animateDuration forwards;
+
+  }
+
+  .hideMiddleElemReverse{
+    animation: hideMiddleElemReverse @animateDuration forwards;
+
+  }
+
+
+
+
+
+  @keyframes slideInLeft {
+    from {
+
+      transform: translateX(~'calc(-50vw + 30px)');
+      visibility: visible;
+      background:transparent;
+      overflow: auto;
+    }
+
+    to {
+     
+      transform: translate3d(0, 0, 0);
+      background: #202426;
+      overflow: auto;
+
+    }
+  }
+
+
+
+  @keyframes slideInRight {
+    from {
+
+      transform: translate3d(0%, 0, 0);
+      visibility: visible;
+      background: #202426;
+      overflow: hidden;
+
+    }
+
+    to {
+
+      transform: translate3d(~'calc(-50vw + 30px)', 0, 0);
+      background: transparent;
+      overflow: hidden;
+
+    }
+  }
+
+
+
+  /* top element */
+
+
+  @keyframes closeTopElem {
+    from {
+
+      transform: translateY(0px)  rotate(0deg);
+
+    }
+
+    to {
+
+      transform: translateY(8px) rotate(-45deg);
+    }
+  }
+
+
+  @keyframes closeTopElemReverse {
+    from {
+      transform:  translateY(8px) rotate(-45deg);
+
+
+    }
+
+    to {
+      transform: translateY(0px) rotate(0deg);
+
+    }
+  }
+
+  /* middle element */
+
+  @keyframes hideMiddleElem {
+    from {
+      opacity: 1;
+
+
+    }
+
+    to {
+      opacity: 0;
+
+    }
+  }
+
+
+  @keyframes hideMiddleElemReverse {
+    from {
+      opacity: 0;
+
+
+    }
+
+    to {
+      opacity: 1;
+
+    }
+  }
+
+
+
+
+  /* bottom element */
+
+
+  @keyframes closeBottomElem {
+    from {
+      transform: translateY(0px) rotate(0deg);
+
+
+    }
+
+    to {
+      transform: translateY(-9px) rotate(45deg);
+
+    }
+  }
+
+  @keyframes closeBottomElemReverse {
+    from {
+      transform: translateY(-9px) rotate(45deg);
+
+
+    }
+
+    to {
+      transform: translateY(0px) rotate(0deg);
+
+    }
+  }

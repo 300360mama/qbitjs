@@ -1,0 +1,148 @@
+@media screen and (max-width: 768px) {
+  .wrapper {
+    min-width: 100%;
+  }
+  .wrapper header .inner_wrapper,
+  .wrapper .content {
+    width: 100%;
+  }
+  .wrapper header .inner_wrapper .logo {
+    margin: 0 auto;
+    width: auto;
+  }
+  .wrapper header .inner_wrapper .navigation {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    background: #000;
+    top: 0;
+    left: 0;
+    background: transparent;
+    -webkit-transform: translateX(calc(-50vw + 30px));
+        -ms-transform: translateX(calc(-50vw + 30px));
+            transform: translateX(calc(-50vw + 30px));
+    visibility: visible;
+    overflow: auto;
+  }
+  .wrapper header .inner_wrapper .navigation .burger_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    right: 0;
+    top: 0;
+  }
+  .wrapper header .inner_wrapper .navigation .burger_button:hover {
+    cursor: pointer;
+  }
+  .wrapper header .inner_wrapper .navigation .burger_button .burger {
+    height: 2px;
+    width: 90%;
+    background: #000;
+    margin: 3px 0;
+  }
+  .wrapper header .inner_wrapper .navigation a:first-of-type {
+    margin-top: 40px;
+  }
+  .wrapper .banner {
+    display: none;
+  }
+  .wrapper .content .cook {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .content .cook .welcome,
+  .wrapper .content .cook .features {
+    width: 100%;
+  }
+  .wrapper .content .cook .welcome h3,
+  .wrapper .content .cook .features h3 {
+    text-align: center;
+  }
+  .wrapper .content .cook .welcome .cook_info {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+  .wrapper .content .cook .welcome .cook_info .cook_photo {
+    margin-right: 30px;
+  }
+  .wrapper .content .cook .features .cook_list li {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .wrapper .content .choice {
+    padding: 0 10px;
+    width: calc(100% - 20px);
+  }
+  .wrapper .content .choice .slide {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .content .choice .slide .choice_info {
+    width: 47%;
+    margin-bottom: 25px;
+  }
+  .wrapper .content .choice .slide .choice_info .choice_info_food {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .content .info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .content .info .info_block {
+    width: 100%;
+  }
+  .wrapper .content .info .info_block h3 {
+    text-align: center;
+  }
+  .wrapper .content .info .follow .info_nav a {
+    margin: 0 9px;
+  }
+  .wrapper .content .info .follow,
+  .wrapper .content .info .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper footer span {
+    margin-bottom: 10px;
+  }
+}

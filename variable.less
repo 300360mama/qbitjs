@@ -1,0 +1,26 @@
+@orangeColor: #eb6c10;
+@bgColor: #f2f0f0;
+@titleColor: #5d0400;
+
+
+.fontParams(@fontColor:#000000, @fontSize:16px, @fontFamily:Arial){
+    color: @fontColor;
+    font: @fontSize @fontFamily;
+}
+
+.positionFlex(@justifyContent: flex-start, @alignItems: stretch, @display:flex){
+    display: @display;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+}
+
+
+.font(@fontFamily; @fontFolder; @fontName) {
+    @font-face{
+        font-family: '@{fontFamily}';
+        src: url('/fonts/@{fontFolder}/@{fontName}.ttf'),
+        url('/fonts/@{fontFolder}/@{fontName}.otf');
+
+    }
+
+}

@@ -1,0 +1,180 @@
+@media screen and (max-width: 768px){
+
+    .wrapper{
+        min-width: 100%;
+
+        header .inner_wrapper, .content{
+            width: 100%;
+        }
+
+
+        header{
+
+            .inner_wrapper{
+
+                .logo{
+                    margin:0 auto;
+                    width: auto;
+                }
+
+                .navigation{
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    width: 50vw;
+                    height: 100vh;
+                    background: #000;
+                    top: 0;
+                    left: 0;
+                    background: transparent;
+                    transform: translateX(~'calc(-50vw + 30px)');
+                    visibility: visible;
+                    overflow: auto;
+
+
+                    .burger_button{
+                        display: flex;
+                        position: absolute;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 30px;
+                        height: 30px;
+                        background: #fff;
+                        right: 0;
+                        top: 0;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+
+                        .burger{
+                            height: 2px;
+                            width: 90%;
+                            background: #000;
+                            margin: 3px 0;
+
+                        }
+                    }
+
+                    a:first-of-type{
+                        margin-top:40px;
+                    }
+
+                }
+            }
+        }
+
+        .banner{
+            display: none;
+        }
+
+        .content{
+
+            .cook{
+
+                flex-wrap: wrap;
+                .welcome, .features{
+                    width: 100%;
+                }
+
+                .welcome h3, .features h3{
+                    text-align: center;
+                }
+
+                .welcome{
+
+
+                    .cook_info{
+                            width: ~'calc(100% - 20px)';
+                            padding: 0 10px;
+
+                            .cook_photo{
+                                margin-right: 30px;
+                            }
+
+
+
+                    }
+                }
+
+                .features{
+
+                    .cook_list{
+
+                        li{
+                            width: 70%;
+                            margin: 0 auto;
+                        }
+
+                    }
+                }
+
+            }
+
+
+            .choice{
+
+
+                padding: 0 10px;
+                width: ~'calc(100% - 20px)';
+                .slide{
+
+                    flex-wrap: wrap;
+                    .choice_info{
+                        width: 47%;
+                        margin-bottom: 25px;
+
+                        .choice_info_food{
+                            align-items: center;
+                        }
+
+                    }
+
+                }
+            }
+
+            .info{
+
+                flex-wrap: wrap;
+
+                .info_block{
+                    width: 100%;
+
+                    h3{
+                        text-align: center;
+                    }
+
+
+                }
+
+                .follow{
+                    .info_nav{
+                        a{
+                            margin: 0 9px;
+                        }
+                    }
+                }
+
+                .follow, .email{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+
+        footer{
+            flex-direction: column;
+            align-items: center;
+
+            span{
+                margin-bottom: 10px;
+            }
+        }
+
+
+    }
+
+
+}

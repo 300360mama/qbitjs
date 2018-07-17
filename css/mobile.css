@@ -1,0 +1,14 @@
+@media screen and (max-width: 425px) {
+  .wrapper .content .cook .welcome .cook_info .cook_photo {
+    display: none;
+  }
+  .wrapper .content .cook .welcome .cook_info .cook_text {
+    width: 100%;
+  }
+  .wrapper .content .choice .slide .choice_info {
+    width: 100%;
+  }
+  .wrapper .content .info .follow .info_nav {
+    display: none;
+  }
+}
